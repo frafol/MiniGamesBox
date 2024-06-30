@@ -1,9 +1,6 @@
 package plugily.projects.minigamesbox.api.arena.managers;
 
-import me.tigerhix.lib.scoreboard.type.Entry;
 import plugily.projects.minigamesbox.api.user.IUser;
-
-import java.util.List;
 
 
 /**

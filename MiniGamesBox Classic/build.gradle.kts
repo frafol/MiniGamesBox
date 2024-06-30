@@ -22,8 +22,12 @@ plugins {
     java
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
-    implementation("me.tigerhix.lib:scoreboard:1.4.4") { isTransitive = false }
+    implementation("fr.mrmicky:fastboard:2.1.2") { isTransitive = false }
     implementation("com.github.cryptomorin:XSeries:9.10.0") { isTransitive = false }
     implementation(project(":MiniGamesBox-API", "shadow"))
     implementation(project(":MiniGamesBox-Inventory", "shadow"))
@@ -55,7 +59,7 @@ tasks {
         relocate("org.openjdk.nashorn", "plugily.projects.minigamesbox.classic.utils.skript.nashorn")
         relocate("com.cryptomorin.xseries.particles", "plugily.projects.minigamesbox.classic.utils.version.xseries")
         relocate("com.cryptomorin.xseries", "plugily.projects.minigamesbox.classic.utils.version.xseries")
-        relocate("me.tigerhix.lib.scoreboard", "plugily.projects.minigamesbox.classic.utils.scoreboard")
+        relocate ("fr.mrmicky.fastboard",  "plugily.projects.minigamesbox.classic.utils.scoreboard")
         relocate("org.bstats", "plugily.projects.minigamesbox.classic.utils.bstats")
         relocate("io.papermc.lib", "plugily.projects.minigamesbox.classic.utils.paperlib")
     }

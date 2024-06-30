@@ -18,11 +18,6 @@
 
 package plugily.projects.minigamesbox.classic.arena.managers;
 
-import me.tigerhix.lib.scoreboard.ScoreboardLib;
-import me.tigerhix.lib.scoreboard.common.EntryBuilder;
-import me.tigerhix.lib.scoreboard.type.Entry;
-import me.tigerhix.lib.scoreboard.type.Scoreboard;
-import me.tigerhix.lib.scoreboard.type.ScoreboardHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import plugily.projects.minigamesbox.api.IPluginMain;

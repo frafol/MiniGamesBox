@@ -22,8 +22,12 @@ plugins {
     java
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
-    implementation("me.tigerhix.lib:scoreboard:1.4.4") { isTransitive = false }
+    implementation("fr.mrmicky:fastboard:2.1.2") { isTransitive = false }
     compileOnly(project(":MiniGamesBox-Database", "shadow"))
     compileOnly("com.github.cryptomorin:XSeries:9.10.0") { isTransitive = false }
 }
